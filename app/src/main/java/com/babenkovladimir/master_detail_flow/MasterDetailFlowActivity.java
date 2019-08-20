@@ -15,11 +15,19 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MasterDetailFlowActivity extends BaseActivity {
 
+  // Binding
+
   @BindView(R.id.recycler)
   RecyclerView mRecycler;
 
   @BindView(R.id.btAddBankCard)
   FloatingActionButton btAddCard;
+
+  // Variables
+
+  MyRecyclerAdapter mRecyclerAdapter;
+
+  // Life
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +46,9 @@ public class MasterDetailFlowActivity extends BaseActivity {
   }
 
   private void setupRecycler() {
-    MyRecyclerAdapter recyclerAdapter = new MyRecyclerAdapter();
+    mRecyclerAdapter = new MyRecyclerAdapter();
 
-    recyclerAdapter.setOnCardItemClick(new OnCardItemClick() {
+    mRecyclerAdapter.setOnCardItemClick(new OnCardItemClick() {
       @Override
       public void onCardClick(int position) {
 //        showToast(name);
@@ -51,16 +59,21 @@ public class MasterDetailFlowActivity extends BaseActivity {
     LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
 
     mRecycler.setLayoutManager(layoutManager);
-    mRecycler.setAdapter(recyclerAdapter);
+    mRecycler.setAdapter(mRecyclerAdapter);
 
     BankCardManager.initBankCardList();
-    recyclerAdapter.setCards(BankCardManager.getBankCardList());
+    mRecyclerAdapter.setCards(BankCardManager.getBankCardList());
   }
 
   private void showAboutActivity(int position) {
     Intent aboutIntent = new Intent(this, BankCardAboutActivity.class);
     aboutIntent.putExtra("position", position);
-
     startActivity(aboutIntent);
+  }
+
+  @Override
+  protected void onResume() {
+    super.onResume();
+    mRecyclerAdapter.notifyDataSetChanged();
   }
 }

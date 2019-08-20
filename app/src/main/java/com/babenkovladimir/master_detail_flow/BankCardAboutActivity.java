@@ -16,7 +16,7 @@ public class BankCardAboutActivity extends AppCompatActivity {
   TextView mOwnerNameTextView;
 
   @BindView(R.id.tvCardNumber)
-  TextView mcardNumberTextView;
+  TextView mCardNumberTextView;
 
   @BindView(R.id.tvAmount)
   TextView mAmountTextView;
@@ -47,6 +47,6 @@ public class BankCardAboutActivity extends AppCompatActivity {
     BankCard bankCard = BankCardManager.getBankCardList().get(position);
 
     mOwnerNameTextView.setText(bankCard.getOwnerName());
-    mcardNumberTextView.setText(bankCard.getNum());
+    mCardNumberTextView.setText(bankCard.getNum());
   }
 }
