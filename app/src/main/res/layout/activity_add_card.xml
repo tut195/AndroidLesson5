@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".master_detail_flow.AddCardActivity">
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"/>
+
+  <EditText
+    android:id="@+id/etOwnerName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Owner Name"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"/>
+
+  <EditText
+    android:id="@+id/etCardNumber"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Card number"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"/>
+
+  <EditText
+    android:id="@+id/etAmount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Amount"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"/>
+
+  <EditText
+    android:id="@+id/etDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Date"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"/>
+
+  <EditText
+    android:id="@+id/etPin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Pin"/>
+
+  <Button
+    android:id="@+id/btAddCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Add card"/>
+
+</LinearLayout>

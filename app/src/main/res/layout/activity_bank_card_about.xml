@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".master_detail_flow.BankCardAboutActivity">
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"/>
+
+  <TextView
+    android:id="@+id/tvOwnerName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Owner Name"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"/>
+
+  <TextView
+    android:id="@+id/tvCardNumber"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Card number"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"/>
+
+  <TextView
+    android:id="@+id/tvAmount"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Amount"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"/>
+
+  <TextView
+    android:id="@+id/tvDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Date"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="16dp"/>
+
+  <TextView
+    android:id="@+id/tvPin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Pin"/>
+
+</LinearLayout>
