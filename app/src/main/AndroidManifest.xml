@@ -9,19 +9,18 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-    <activity android:name=".master_detail_flow.AddCardActivity">
-    </activity>
-    <activity android:name=".master_detail_flow.BankCardAboutActivity">
-    </activity>
-    <activity android:name=".fragments.FragmentsActivity">
-    </activity>
-    <activity android:name=".master_detail_flow.MasterDetailFlowActivity">
-    </activity>
+    <activity android:name=".resource.ResourceActivity"></activity>
+    <activity android:name=".preferences.PreferencesActivity" />
+    <activity android:name=".dialog.DialogActivity" />
+    <activity android:name=".master_detail_flow.AddCardActivity" />
+    <activity android:name=".master_detail_flow.BankCardAboutActivity" />
+    <activity android:name=".fragments.FragmentsActivity" />
+    <activity android:name=".master_detail_flow.MasterDetailFlowActivity" />
     <activity android:name=".MainActivity">
       <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
+        <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER"/>
+        <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
   </application>
